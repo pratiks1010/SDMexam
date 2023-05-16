@@ -1,0 +1,59 @@
+F:\Program\VSCode git>git init
+Reinitialized existing Git repository in F:/Program/VSCode git/.git/
+
+F:\Program\VSCode git>dir /a
+ Volume in drive F is Photos
+ Volume Serial Number is 083D-3A85
+
+ Directory of F:\Program\VSCode git
+
+19-04-2023  22:35    <DIR>          .
+19-04-2023  22:30    <DIR>          ..
+19-04-2023  22:37    <DIR>          .git
+19-04-2023  22:35                 0 Doc.txt
+               1 File(s)              0 bytes
+               3 Dir(s)  145,443,704,832 bytes free
+
+F:\Program\VSCode git>git add .
+
+F:\Program\VSCode git>git commit -m "my first commit"
+[main (root-commit) 3e73756] my first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Doc.txt
+
+F:\Program\VSCode git>git config --global user.email pratik1008sawant@gmail.com
+
+F:\Program\VSCode git>git config --global user.name pratiks1010
+
+F:\Program\VSCode git>git commit -m "my first commit"
+On branch main
+nothing to commit, working tree clean
+
+F:\Program\VSCode git>git remote add origin https://github.com/pratiks1010/JavaProgram.git
+error: remote origin already exists.
+
+F:\Program\VSCode git>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/pratiks1010/JavaProgram.git'
+
+F:\Program\VSCode git>git push https://github.com/pratiks1010/JavaProgram.git
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pratiks1010/JavaProgram.git
+ * [new branch]      main -> main
+
+F:\Program\VSCode git>
+
+F:\Program\VSCode git>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 973 bytes | 973.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pratiks1010/JavaProgram.git
+   3e73756..c8dd612  main -> main
+branch 'main' set up to track 'origin/main'.
